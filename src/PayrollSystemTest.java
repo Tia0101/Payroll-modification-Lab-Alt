@@ -153,7 +153,7 @@ public class PayrollSystemTest {
 
       System.out.println("Employees processed polymorphically:\n");
       
-      //for loop where the polymorphism occurs
+      //for loop where the bonus polymorphism occurs
       for (Employee currentEmployee : employees) {
          System.out.println(currentEmployee); // invokes toString
 
