@@ -17,7 +17,7 @@ import payroll.SalariedEmployee;
 public class PayrollSystemTest {
    public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
-      ArrayList <Employee> employees = new ArrayList<>();//Empty Employee object arraylist created for class
+      ArrayList <Employee> employees = new ArrayList<>();//Employee arraylist created for class objects to populate.
       boolean quit;
       int currentMonth;
 
