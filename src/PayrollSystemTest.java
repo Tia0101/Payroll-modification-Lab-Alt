@@ -1,5 +1,5 @@
 // Name: Tia Vanderyacht
-//Date: 04/18/2024
+//Date: 04/27/2024
 // Class: CS 145 9:30am face to face
 // Assignment: Lab 4 pay roll modification.
 // Purpose: Test class for payroll, shows the use of polymorphism
@@ -16,8 +16,8 @@ import payroll.SalariedEmployee;
 
 public class PayrollSystemTest {
    public static void main(String[] args) {
-      Scanner input = new Scanner(System.in); 
-      ArrayList <Employee> employees = new ArrayList<>();
+      Scanner input = new Scanner(System.in);
+      ArrayList <Employee> employees = new ArrayList<>();//Empty Employee object arraylist created for class
       boolean quit;
       int currentMonth;
 
@@ -44,7 +44,7 @@ public class PayrollSystemTest {
                int birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter employee's monthly salary:");
                double monthlySalary = input.nextDouble();
-               //Class object created 
+               //Class object created
                SalariedEmployee salariedEmployee = new SalariedEmployee(firstName,lastName,socialSecurityNumber,birthMonth,birthDay,birthYear,monthlySalary);
                //Class object added to arraylist
                employees.add(salariedEmployee);
@@ -136,6 +136,15 @@ public class PayrollSystemTest {
          }
       } while (!quit);
 
+      System.out.println("Employee wages before any bonuses have been applied");
+
+      //for loop to show wages before the bonus polymorphism, this for loop shows polymorphism as well.
+      for(Employee wage: employees){
+         System.out.printf("%n%s%n",wage);
+         System.out.printf(
+               "Wages: $%,.2f\n\n", wage.earnings());
+      }
+
       do {
          System.out.print("Enter the current month (1 - 12): ");
          currentMonth = input.nextInt();
@@ -151,7 +160,7 @@ public class PayrollSystemTest {
          // if month of employee's birthday, add $100 to salary
          if (currentMonth == currentEmployee.getBirthDate().getMonth()) {
             System.out.printf(
-               "Wages: $%,.2f, %s\n\n", currentEmployee.bonusEarnings(), //polymorhpism of the method I created occurs to add $100 bonus.
+               "Wages: $%,.2f, %s\n\n", currentEmployee.bonusEarnings(), //polymorphism of the method I created occurs to add $100 bonus.
                "$100 bonus was added to pay");
          }
          else {
@@ -159,6 +168,6 @@ public class PayrollSystemTest {
                "Wages: $%,.2f\n\n", currentEmployee.earnings());
          }
       }
-   }   
+   }
 }
 
