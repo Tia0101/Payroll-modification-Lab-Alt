@@ -66,7 +66,7 @@ public class CommissionEmployee extends Employee {
       return getCommissionRate() * getGrossSales();
    }
 
-   // Applies $100 bonus to earnings,overrides abstract method in Employee
+   //Applies $100 bonus to earnings,overrides abstract method in Employee
    @Override
    public double bonusEarnings() {
       return earnings() + 100;
