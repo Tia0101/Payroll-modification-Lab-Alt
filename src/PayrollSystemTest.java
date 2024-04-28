@@ -163,9 +163,6 @@ public class PayrollSystemTest {
                "Wages: $%,.2f\n\n", currentEmployee.earnings());
          }
       }
-
-   }
-
-   
+   }   
 }
 
