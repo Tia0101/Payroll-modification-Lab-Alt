@@ -68,7 +68,7 @@ public class PayrollSystemTest {
                double hours = input.nextDouble();
                //Class object created
                HourlyEmployee hourlyEmployee = new HourlyEmployee(firstName,lastName,socialSecurityNumber,birthMonth,birthDay,birthYear,wage,hours);
-               //Class object add to array list
+               //Class object added to array list
                employees.add(hourlyEmployee);
             break;
 

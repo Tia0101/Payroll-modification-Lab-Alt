@@ -1,93 +1,123 @@
+C:\WCC Courses\CS 145\lab 4\Payroll modification Lab Alt> cmd /C "C:\Users\tiamv\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin\java.exe -XX:+ShowCodeDetailsInExceptionMessages -cp "C:\WCC Courses\CS 145\lab 4\Payroll modification Lab Alt\bin" PayrollSystemTest "
 Welcome to Company X Payroll system
 
-Is the employee salaried, hourly, commission, or basecommission
-Salaried
-Please enter employee's first name name:
-Tony
-Please enter employee's last name name:
-Stark
+Is the employee salaried, hourly, commission, or base-commission
+Hourly
+Please enter employee's first name:
+Tia
+Please enter employee's last name:
+VanderYacht
 Please enter employee's social security number:
 777-77-7777
 Please enter employee's birth date in mm/dd/yyyy format:
-08/15/1985
-Please enter employee's monthly salary:
-9000
-Do you have any other employee's to add to the payroll
-yes
-Is the employee salaried, hourly, commission, or basecommission
-hourly
-Please enter employee's first name:
-Hans
-Please enter employee's last name:
-Solo
-Please enter employee's social security number:
-888-88-8888
-Please enter employee's birth date in mm/dd/yyyy format:
-08/23/1970
+09/09/1990
 Please enter employee's hourly rate:
 40
 Please enter hours worked per week:
 40
 Do you have any other employee's to add to the payroll
 yes
-Is the employee salaried, hourly, commission, or basecommission
-commission
-Please enter employee's first name:
-Harry
-Please enter employee's last name:
-Potter
+Is the employee salaried, hourly, commission, or base-commission
+salaried
+Please enter employee's first name name:
+Jane
+Please enter employee's last name name:
+Smith
 Please enter employee's social security number:
-999-99-9999
+444-44-4444
 Please enter employee's birth date in mm/dd/yyyy format:
-06/01/1985
-Please enter gross sales:
-7000
-Please enter commission rate(0.1-0.9):
-0.8
+03/04/1990
+Please enter employee's monthly salary:
+3000
 Do you have any other employee's to add to the payroll
 yes
-Is the employee salaried, hourly, commission, or basecommission
-basecommission
+Is the employee salaried, hourly, commission, or base-commission
+commission
 Please enter employee's first name:
 Jack
 Please enter employee's last name:
-Sparrow
+Smith
+Please enter employee's social security number:
+222-22-2222
+Please enter employee's birth date in mm/dd/yyyy format:
+09/04/1983
+Please enter gross sales:
+6000
+Please enter commission rate(0.1-0.9):
+0.5
+Do you have any other employee's to add to the payroll
+yes
+Is the employee salaried, hourly, commission, or base-commission
+base-commission
+Please enter employee's first name:
+Joe
+Please enter employee's last name:
+Brown
 Please enter employee's social security number:
 333-33-3333
 Please enter employee's birth date in mm/dd/yyyy format:
-12/31/1990
+04/03/1982
 Please enter gross sales:
-70000
+60000
 Please enter commission rate(0.1-0.9):
-0.6
+0.5
 Please enter Employee's monthly base salary:
-7000
+8000
 Do you have any other employee's to add to the payroll
 no
-Enter the current month (1 - 12): 8
+Employee wages before any bonuses have been applied
+
+Hourly employee: Tia VanderYacht
+Social security number: 777-77-7777
+Birth date: 9/9/1990
+Hourly wage: $40.00; Hours worked: 40.00
+Wages: $6,400.00
+
+
+Salaried employee: Jane Smith
+Social security number: 444-44-4444
+Birth date: 3/4/1990
+Monthly salary: $3,000.00
+Wages: $3,000.00
+
+
+Commission employee: Jack Smith
+Social security number: 222-22-2222
+Birth date: 9/4/1983
+Gross sales: $6,000.00; Commission rate: 0.50
+Wages: $3,000.00
+
+
+Base-salaried Commission employee: Joe Brown
+Social security number: 333-33-3333
+Birth date: 4/3/1982
+Gross sales: $60,000.00; Commission rate: 0.50; Base salary: $8,000.00
+Wages: $38,000.00
+
+Enter the current month (1 - 12): 9
 
 Employees processed polymorphically:
 
-Salaried employee: Tony Stark
+Hourly employee: Tia VanderYacht
 Social security number: 777-77-7777
-Birth date: 8/15/1985
-Monthly salary: $9,000.00
-Wages: $9,100.00, $100 bonus was added to pay
-
-Hourly employee: Hans Solo
-Social security number: 888-88-8888
-Birth date: 8/23/1970
+Birth date: 9/9/1990
 Hourly wage: $40.00; Hours worked: 40.00
 Wages: $6,500.00, $100 bonus was added to pay
 
-Commission employee: Harry Potter
-Social security number: 999-99-9999
-Birth date: 6/1/1985
-Gross sales: $7,000.00; Commission rate: 0.80
-Wages: $5,600.00
+Salaried employee: Jane Smith
+Social security number: 444-44-4444
+Birth date: 3/4/1990
+Monthly salary: $3,000.00
+Wages: $3,000.00
 
-Base-salaried Commission employee: Jack Sparrow
+Commission employee: Jack Smith
+Social security number: 222-22-2222
+Birth date: 9/4/1983
+Gross sales: $6,000.00; Commission rate: 0.50
+Wages: $3,100.00, $100 bonus was added to pay
+
+Base-salaried Commission employee: Joe Brown
 Social security number: 333-33-3333
-Birth date: 12/31/1990
-Gross sales: $70,000.00; Commission rate: 0.60; Base salary: $7,000.00
-Wages: $49,000.00
+Birth date: 4/3/1982
+Gross sales: $60,000.00; Commission rate: 0.50; Base salary: $8,000.00
+Wages: $38,000.00
