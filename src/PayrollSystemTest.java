@@ -25,7 +25,7 @@ public class PayrollSystemTest {
 
       // Do while loop to collect user input for creating payroll class objects and populating array list
       do {
-         System.out.println("Is the employee salaried, hourly, commission, or basecommission");
+         System.out.println("Is the employee salaried, hourly, commission, or base-commission");
          String employmentType = input.next().toLowerCase();
          
          switch(employmentType){
@@ -37,12 +37,11 @@ public class PayrollSystemTest {
                String lastName = input.next();
                System.out.println("Please enter employee's social security number:");
                String socialSecurityNumber = input.next();
-               System.out.println("Please enter employee's birth month (1-12):");
-               int birthMonth = input.nextInt();
-               System.out.println("Please enter employee's birth day (1-31):");
-               int birthDay = input.nextInt();
-               System.out.println("Please enter employee's  birth year (ex 1985):");
-               int birthYear = input.nextInt();
+               System.out.println("Please enter employee's birth date in mm/dd/yyyy format:");
+               String birthDate = input.next();
+               int birthMonth = Integer.parseInt(birthDate.substring(0, 2));
+               int birthDay = Integer.parseInt(birthDate.substring(3, 5));
+               int birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter employee's monthly salary:");
                double monthlySalary = input.nextDouble();
                //Class object created 
@@ -58,12 +57,11 @@ public class PayrollSystemTest {
                lastName = input.next();
                System.out.println("Please enter employee's social security number:");
                socialSecurityNumber = input.next();
-               System.out.println("Please enter employee's birth month (1-12):");
-               birthMonth = birthMonth = input.nextInt();
-               System.out.println("Please enter employee's birth day (1-31):");
-               birthDay = birthDay = input.nextInt();
-               System.out.println("Please enter employee's  birth year (ex 1985):");
-               birthYear = birthYear = input.nextInt();
+               System.out.println("Please enter employee's birth date in mm/dd/yyyy format:");
+               birthDate = input.next();
+               birthMonth = Integer.parseInt(birthDate.substring(0, 2));
+               birthDay = Integer.parseInt(birthDate.substring(3, 5));
+               birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter employee's hourly rate:");
                double wage = input.nextDouble();
                System.out.println("Please enter hours worked per week:");
@@ -81,12 +79,11 @@ public class PayrollSystemTest {
                lastName = input.next();
                System.out.println("Please enter employee's social security number:");
                socialSecurityNumber = input.next();
-               System.out.println("Please enter employee's birth month (1-12):");
-               birthMonth = input.nextInt();
-               System.out.println("Please enter employee's birth day (1-31):");
-               birthDay = input.nextInt();
-               System.out.println("Please enter employee's  birth year (ex 1985):");
-               birthYear = input.nextInt();
+               System.out.println("Please enter employee's birth date in mm/dd/yyyy format:");
+               birthDate = input.next();
+               birthMonth = Integer.parseInt(birthDate.substring(0, 2));
+               birthDay = Integer.parseInt(birthDate.substring(3, 5));
+               birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter gross sales:");
                double grossSales = input.nextDouble();
                System.out.println("Please enter commission rate(0.1-0.9):");
@@ -100,19 +97,18 @@ public class PayrollSystemTest {
                employees.add(commissionEmployee);//object add to array list
             break;
 
-            case "basecommission":
+            case "base-commission":
                System.out.println("Please enter employee's first name:");
                firstName= input.next();
                System.out.println("Please enter employee's last name:");
                lastName = input.next();
                System.out.println("Please enter employee's social security number:");
                socialSecurityNumber = input.next();
-               System.out.println("Please enter employee's birth month (1-12):");
-               birthMonth = input.nextInt();
-               System.out.println("Please enter employee's birth day (1-31):");
-               birthDay =input.nextInt();
-               System.out.println("Please enter employee's  birth year (ex 1985):");
-               birthYear = input.nextInt();
+               System.out.println("Please enter employee's birth date in mm/dd/yyyy format:");
+               birthDate = input.next();
+               birthMonth = Integer.parseInt(birthDate.substring(0, 2));
+               birthDay = Integer.parseInt(birthDate.substring(3, 5));
+               birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter gross sales:");
                grossSales =  input.nextDouble();
                System.out.println("Please enter commission rate(0.1-0.9):");

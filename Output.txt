@@ -3,17 +3,13 @@ Welcome to Company X Payroll system
 Is the employee salaried, hourly, commission, or basecommission
 Salaried
 Please enter employee's first name name:
-Jack
+Tony
 Please enter employee's last name name:
-Sparrow
+Stark
 Please enter employee's social security number:
-999-99-9999
-Please enter employee's birth month (1-12):
-12
-Please enter employee's birth day (1-31):
-31
-Please enter employee's  birth year (ex 1985):
-1989
+777-77-7777
+Please enter employee's birth date in mm/dd/yyyy format:
+08/15/1985
 Please enter employee's monthly salary:
 9000
 Do you have any other employee's to add to the payroll
@@ -21,17 +17,13 @@ yes
 Is the employee salaried, hourly, commission, or basecommission
 hourly
 Please enter employee's first name:
-Harry
+Hans
 Please enter employee's last name:
-Potter
+Solo
 Please enter employee's social security number:
-777-77-7777
-Please enter employee's birth month (1-12):
-8
-Please enter employee's birth day (1-31):
-24
-Please enter employee's  birth year (ex 1985):
-1980
+888-88-8888
+Please enter employee's birth date in mm/dd/yyyy format:
+08/23/1970
 Please enter employee's hourly rate:
 40
 Please enter hours worked per week:
@@ -39,71 +31,63 @@ Please enter hours worked per week:
 Do you have any other employee's to add to the payroll
 yes
 Is the employee salaried, hourly, commission, or basecommission
-commission 
+commission
 Please enter employee's first name:
-Hans
+Harry
 Please enter employee's last name:
-Solo
+Potter
 Please enter employee's social security number:
-333-33-3333
-Please enter employee's birth month (1-12):
-8
-Please enter employee's birth day (1-31):
-21
-Please enter employee's  birth year (ex 1985):
-1995
+999-99-9999
+Please enter employee's birth date in mm/dd/yyyy format:
+06/01/1985
 Please enter gross sales:
-1000
+7000
 Please enter commission rate(0.1-0.9):
-0.6
+0.8
 Do you have any other employee's to add to the payroll
 yes
 Is the employee salaried, hourly, commission, or basecommission
 basecommission
 Please enter employee's first name:
-Tony
+Jack
 Please enter employee's last name:
-Stark
+Sparrow
 Please enter employee's social security number:
-111-11-1111
-Please enter employee's birth month (1-12):
-6
-Please enter employee's birth day (1-31):
-17
-Please enter employee's  birth year (ex 1985):
-1976
+333-33-3333
+Please enter employee's birth date in mm/dd/yyyy format:
+12/31/1990
 Please enter gross sales:
-10000
+70000
 Please enter commission rate(0.1-0.9):
-0.8
+0.6
 Please enter Employee's monthly base salary:
-9000
+7000
 Do you have any other employee's to add to the payroll
 no
 Enter the current month (1 - 12): 8
 
 Employees processed polymorphically:
 
-Salaried employee: Jack Sparrow
-Social security number: 999-99-9999
-Birth date: 12/31/1989
-Monthly salary: $9,000.00
-Wages: $9,000.00
-
-Hourly employee: Harry Potter
+Salaried employee: Tony Stark
 Social security number: 777-77-7777
-Birth date: 8/24/1980
+Birth date: 8/15/1985
+Monthly salary: $9,000.00
+Wages: $9,100.00, $100 bonus was added to pay
+
+Hourly employee: Hans Solo
+Social security number: 888-88-8888
+Birth date: 8/23/1970
 Hourly wage: $40.00; Hours worked: 40.00
 Wages: $6,500.00, $100 bonus was added to pay
 
-Commission employee: Hans Solo
-Social security number: 333-33-3333
-Birth date: 8/21/1995
-Gross sales: $1,000.00; Commission rate: 0.60
-Wages: $700.00, $100 bonus was added to pay
+Commission employee: Harry Potter
+Social security number: 999-99-9999
+Birth date: 6/1/1985
+Gross sales: $7,000.00; Commission rate: 0.80
+Wages: $5,600.00
 
-Base-salaried Commission employee: Tony Stark
-Social security number: 111-11-1111
-Birth date: 6/17/1976
-Gross sales: $10,000.00; Commission rate: 0.80; Base salary: $9,000.00
-Wages: $17,000.00.
+Base-salaried Commission employee: Jack Sparrow
+Social security number: 333-33-3333
+Birth date: 12/31/1990
+Gross sales: $70,000.00; Commission rate: 0.60; Base salary: $7,000.00
+Wages: $49,000.00
