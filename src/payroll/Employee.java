@@ -20,7 +20,7 @@ public abstract class Employee  {
       this.firstName = firstName;
       this.lastName = lastName;
       this.socialSecurityNumber = socialSecurityNumber;
-      birthDate = new Date(month, day, year);
+      this.birthDate = new Date(month, day, year);
    } 
 
    // return first name
@@ -45,7 +45,7 @@ public abstract class Employee  {
    // return String representation of Employee object
    @Override
    public String toString() {
-      return String.format("%s %s\n%s: %s\n%s: %s",
+      return String.format("%s %s%n%s: %s%n%s: %s",
          getFirstName(), getLastName(),
          "Social security number", getSocialSecurityNumber(),
          "Birth date", getBirthDate());

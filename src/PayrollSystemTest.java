@@ -25,10 +25,10 @@ public class PayrollSystemTest {
 
       // Do while loop to collect user input for creating payroll class objects and populating array list
       do {
-         System.out.println("Is the employee salaried, hourly, commission, or base-commission");
+         System.out.println("Is the employee salaried, hourly, commission, or base-commission?");
          String employmentType = input.next().toLowerCase();
          
-         switch(employmentType){
+         switch(employmentType) {
 
             case "salaried":
                System.out.println("Please enter employee's first name name:");
@@ -99,7 +99,7 @@ public class PayrollSystemTest {
 
             case "base-commission":
                System.out.println("Please enter employee's first name:");
-               firstName= input.next();
+               firstName = input.next();
                System.out.println("Please enter employee's last name:");
                lastName = input.next();
                System.out.println("Please enter employee's social security number:");
