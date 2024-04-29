@@ -69,7 +69,9 @@ public class HourlyEmployee extends Employee {
          return getWage() * getHours() * 4;
       }
       else {
-         return 40 * getWage() + (getHours() - 40) * getWage() * 1.5 * 4;
+            double regularPay = 40 * getWage();
+            double overtimePay = (getHours() - 40) * getWage() * 1.5;
+         return (regularPay + overtimePay) * 4;
       }
    }
 
