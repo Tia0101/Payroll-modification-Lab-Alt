@@ -4,8 +4,13 @@
 // Assignment: Lab 4 pay roll modification.
 // Purpose: Test class for payroll, shows the use of polymorphism
 // Citation: This program references chapter 10 of the Deitel/Deitel-11th edition(Early Objects), w3schools.com,and youtube
+
+// Extra Credit I rewrote this test class so the class object were created with user input for the parameters instead of being harder coded.
+// This way the program can populate they ArrayList with as many employees as needed.
+
+
 import java.util.ArrayList;
-import java.util.Scanner; // program uses Scanner to obtain user input
+import java.util.Scanner;
 
 //import of custom payroll packages.
 import payroll.BasePlusCommissionEmployee;
@@ -23,7 +28,7 @@ public class PayrollSystemTest {
 
       System.out.println("Welcome to Company X Payroll system\n");
 
-      // Do while loop to collect user input for creating payroll class objects and populating array list
+      // Do while loop for collecting user input to create payroll class objects and populating array list
       do {
          System.out.println("Is the employee salaried, hourly, commission, or base-commission?");
          String employmentType = input.next().toLowerCase();
@@ -63,11 +68,11 @@ public class PayrollSystemTest {
                birthDay = Integer.parseInt(birthDate.substring(3, 5));
                birthYear = Integer.parseInt(birthDate.substring(6, 10));
                System.out.println("Please enter employee's hourly rate:");
-               double wage = input.nextDouble();
+               double hourlyPay= input.nextDouble();
                System.out.println("Please enter hours worked per week:");
                double hours = input.nextDouble();
                //Class object created
-               HourlyEmployee hourlyEmployee = new HourlyEmployee(firstName,lastName,socialSecurityNumber,birthMonth,birthDay,birthYear,wage,hours);
+               HourlyEmployee hourlyEmployee = new HourlyEmployee(firstName,lastName,socialSecurityNumber,birthMonth,birthDay,birthYear,hourlyPay,hours);
                //Class object added to array list
                employees.add(hourlyEmployee);
             break;

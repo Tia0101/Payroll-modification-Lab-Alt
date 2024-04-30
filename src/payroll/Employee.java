@@ -5,6 +5,8 @@
 // Purpose: Employee abstract super class for payroll.
 // Citation: This program references chapter 10 of the Deitel/Deitel-11th edition(Early Objects), w3schools.com,and youtube
 
+//(not sure if this was actualy extra credit)see lines 60 abstract bonusEarning method for polymorphism
+// When I read the lab instructions I thought we were suppose to write our own method to show polymorphism.
 
 //Custom package created
 package payroll;
@@ -51,9 +53,10 @@ public abstract class Employee  {
          "Birth date", getBirthDate());
    }
 
-   // abstract methods
+   // abstract method
    public abstract double earnings();
-
+   
+   //abstracted method
    public abstract double bonusEarnings();
 }
 

@@ -5,8 +5,10 @@
 // Purpose: Subclass to commission employee class, the class is to calculate pay for a salaried employee who also earns commission on sales.
 // Citation: This program references chapter 10 of the Deitel/Deitel-11th edition(Early Objects), w3schools.com,and youtube
 
+//(not sure if this was actualy extra credit)see lines 52-55 bonusEarning method created to calculate bonus in to employee earnings.
+// When I read the lab instructions I thought we were suppose to write our own method to show polymorphism.
 
-
+//custom package created
 package payroll;
 public class BasePlusCommissionEmployee extends CommissionEmployee {
    private double baseSalary; // base salary per week

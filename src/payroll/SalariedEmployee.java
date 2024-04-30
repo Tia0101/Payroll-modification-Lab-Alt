@@ -5,6 +5,9 @@
 // Purpose: Subclass to employee class, the class is to calculate monthly pay for Salaried employees.
 // Citation: This program references chapter 10 of the Deitel/Deitel-11th edition(Early Objects), w3schools.com,and youtube
 
+//(not sure if this was actualy extra credit)see lines 52-55 bonusEarning method created to calculate bonus in to employee earnings.
+// When I read the lab instructions I thought we were suppose to write our own method to show polymorphism.
+
 //Custom package created
 package payroll;
 

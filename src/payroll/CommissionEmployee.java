@@ -2,9 +2,11 @@
 //Date: 04/27/2024
 // Class: CS 145 9:30am face to face
 // Assignment: Lab 4 pay roll modification.
-// Purpose: Subclass to employee class, the class is to calculate pay for commission employees.
+// Purpose: Subclass to employee class, this class is to calculate pay for commission employees.
 // Citation: This program references chapter 10 of the Deitel/Deitel-11th edition(Early Objects), w3schools.com,and youtube
 
+//(not sure if this was actualy extra credit)see lines 72-75 bonusEarning method created to calculate bonus in to employee earnings.
+// When I read the lab instructions I thought we were suppose to write our own method to show polymorphism.
 
 //Custom package created
 package payroll;
