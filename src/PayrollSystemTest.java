@@ -143,7 +143,7 @@ public class PayrollSystemTest {
 
       System.out.println("Employee wages before any bonuses have been applied");
 
-      //for loop to show wages before the bonus polymorphism, this for loop shows polymorphism as well.
+      //for loop to show wages before the bonus polymorphism, this for loop uses polymorphism.
       for(Employee wage: employees){
          System.out.printf("%n%s%n",wage);
          System.out.printf(
